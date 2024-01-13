@@ -1,0 +1,21 @@
+<script>
+    function hello(...a)
+    {
+        for(i=0;i<a.length;i++)
+        {
+            document.write(a[i]+" say hello")
+        }
+    }
+    var list=["ram","lakhan","shyam","radhe","yogesh"]
+    hello(list)
+
+    var s=["sun","mon","tues","wed"]
+
+    s.forEach((value,index)=>{
+        document.write(value+" "+index+"<br>")
+    })
+
+    s.forEach(function(v,i){
+        document.write(v+" "+i+"<br>")
+    })
+</script>

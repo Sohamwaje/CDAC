@@ -1,0 +1,21 @@
+<form action="http://www.google.com" name="myform1" onsubmit="return myVal()">
+    <input type="text" name="contact">
+    <input type="submit" value="Go">
+</form>
+<script>
+    function myVal()
+    {
+        var na=document.myform1.contact.value;
+        if(na=="")
+        {
+            alert("this is empty field")
+            return false
+        }
+        else if(na.length<10 || na.length>10)
+            {
+                alert("invalid contact number")
+                return false
+            }
+        //alert(na)
+    }
+</script>

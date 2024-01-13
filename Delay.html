@@ -1,0 +1,18 @@
+<h1 id="msj">hello user</h1>
+<p id="wait">wait 5 seconds</p>
+<style>
+    #msj
+    {
+        display: none;
+    }
+    #wait
+    {
+        display: block;
+    }
+</style>
+<script>
+setTimeout(() => {
+    document.getElementById("msj").style.display="block"
+    document.getElementById("wait").style.display="none"
+}, 5000);
+</script>

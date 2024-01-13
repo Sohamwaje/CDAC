@@ -1,0 +1,14 @@
+<script>
+    function f1()
+    {
+        var x=90
+        function f2()
+        {
+            var y=90
+            return x+y
+        }
+        return f2
+    }
+    var step1=f1()
+    document.write(step1())
+</script>

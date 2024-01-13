@@ -1,0 +1,27 @@
+<script>
+    function Otp()
+    {
+        this.num=(Math.round(Math.random()*10000))
+        this.fun=function()
+        {
+            alert("Otp is "+this.num)
+        }
+        this.verify=function()
+            {
+                var v=prompt("Enter OTP ")
+                if(v==this.num)
+                {
+                    document.write("Login succesfull")
+                }
+                else
+                {
+                    document.write("Login failed")
+                }
+
+            }
+         
+        }
+        var o=new Otp()
+            o.fun()
+            o.verify() 
+</script>

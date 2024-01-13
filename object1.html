@@ -1,0 +1,15 @@
+<script>
+    var toy={
+        name:'doll',
+        price:1000,
+        mode:'electric',
+        play:["dance","singing"],
+        say_hello:function()
+        {
+            document.write("this is method")
+        }
+    }
+    document.write(`toy name is ${toy.name}<br>Price is ${toy.price}<br>`)
+    document.write(toy.play[0]+"<br>")
+    toy.say_hello()
+</script>

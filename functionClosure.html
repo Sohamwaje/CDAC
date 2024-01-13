@@ -1,0 +1,12 @@
+<script>
+    function outer()
+    {
+        function inner()
+        {
+            return 12+12
+        }
+        return inner
+    }
+    var x=outer()         //outer calling
+    console.log(x())      //inner call process
+</script>

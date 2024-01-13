@@ -1,0 +1,17 @@
+<script>
+    class Example
+    {
+        name="Soham"      //class variable
+        constructor()
+        {
+            document.write("hi this side constructor "+this.name)
+        }
+        say_hello()
+        {
+            var name="hello user"          //local variable
+            document.write(name+" "+this.name) 
+        }
+    }
+    var o=new Example()
+    o.say_hello()
+</script>
